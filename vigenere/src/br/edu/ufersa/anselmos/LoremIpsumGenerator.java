@@ -1,0 +1,18 @@
+package br.edu.ufersa.anselmos;
+
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+public class LoremIpsumGenerator {
+    private static final String text =
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales eros non ipsum eleifend, sit amet euismod sapien gravida. In vestibulum est nec consequat congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare iaculis consequat. Nunc luctus enim sed lectus faucibus cursus. Integer volutpat sapien eu urna eleifend, vitae varius eros auctor. Proin sed quam at arcu varius bibendum id vel quam. Phasellus rhoncus bibendum consequat. Ut posuere enim orci, vel sodales massa tempus at. Aliquam erat volutpat. Vivamus consequat, magna ut accumsan elementum, dolor libero venenatis ipsum, a consequat lacus lectus sed magna. Cras ut nulla id mi aliquet pellentesque ac non sem. Maecenas neque arcu, feugiat et ultrices a, vulputate a augue. Vivamus non nisi sed mi ullamcorper fermentum.\n" +
+                    "Nam eu accumsan purus. Curabitur nec lectus nisi. Ut magna velit, cursus sed mauris nec, posuere volutpat metus. Ut hendrerit eu magna vel pretium. Maecenas sit amet elementum quam. Suspendisse interdum, quam dapibus fringilla ultrices, nulla nulla rhoncus massa, a tempus mauris mi porta justo. In tempor ac massa quis laoreet. Fusce vitae blandit eros, nec volutpat magna. Suspendisse maximus diam sit amet venenatis bibendum. Nam lobortis augue ut dictum dignissim. Donec nec orci a elit pellentesque molestie. Nulla eu lacus eleifend augue posuere accumsan ut vel mauris. Aliquam sed congue felis.\n" +
+                    "In porttitor, metus viverra posuere laoreet, dui enim eleifend libero, et consectetur tortor sapien at nulla. Vestibulum auctor consectetur velit. Nunc accumsan erat in dui convallis laoreet. Duis pulvinar lectus ac aliquam porta. Sed dui enim, varius et nisl vitae, auctor pulvinar lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus eget tellus vel nulla finibus euismod. Vestibulum tincidunt dapibus tellus, eu aliquet orci auctor nec. Fusce eu felis ut tortor sodales ornare eget in mauris. Vestibulum pellentesque magna ut porttitor feugiat. Vivamus ac mauris id tellus varius varius. Quisque in ultricies sapien. Nullam molestie dolor sit amet odio elementum cursus. Nunc commodo eros ac convallis tristique. Nunc vitae lacus eget ligula pharetra ornare et vitae magna.\n" +
+                    "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum facilisis ipsum eu metus congue volutpat. Nunc hendrerit nisl vitae orci bibendum aliquet. Mauris venenatis mi nibh, vitae lobortis arcu blandit non. Pellentesque pharetra maximus augue, in sollicitudin neque. Aliquam vehicula tempus metus nec mollis. Mauris viverra suscipit elit, at fermentum dui.\n" +
+                    "In eleifend velit luctus lectus sagittis tempor. Quisque molestie, neque et aliquet finibus, dolor velit suscipit libero, sed fermentum ante mauris et felis. Etiam eleifend, neque et auctor molestie, ante elit mattis odio, at luctus mauris odio non lectus. Vivamus semper porta ante id lobortis. Aliquam pretium, enim non accumsan porta, quam libero egestas felis, at fermentum odio mi non ante. Integer suscipit fringilla turpis, ut dictum odio elementum et. Nunc laoreet massa elit, vitae dapibus urna faucibus bibendum. Vestibulum ullamcorper purus quis nibh pulvinar, ut efficitur elit gravida.";
+
+    public Stream<String> generate() {
+        var words = text.split("\\s+");
+        return Arrays.stream(words).map(word -> word.replaceAll("\\W+", "").toUpperCase());
+    }
+}

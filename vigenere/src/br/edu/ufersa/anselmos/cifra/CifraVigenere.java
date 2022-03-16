@@ -1,10 +1,10 @@
-package cifras;
+package br.edu.ufersa.anselmos.cifra;
 
-public class CifraVigenere implements ICifra {
+public class CifraVigenere implements Cifra {
     private static final int TAMANHO_DICIONARIO = 26;
     private final String palavraChave;
 
-    CifraVigenere(String palavraChave) {
+    public CifraVigenere(String palavraChave) {
         this.palavraChave = palavraChave;
     }
 
