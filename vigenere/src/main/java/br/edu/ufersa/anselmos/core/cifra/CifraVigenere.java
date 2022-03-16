@@ -1,4 +1,4 @@
-package br.edu.ufersa.anselmos.cifra;
+package br.edu.ufersa.anselmos.core.cifra;
 
 public class CifraVigenere implements Cifra {
     private static final int TAMANHO_DICIONARIO = 26;

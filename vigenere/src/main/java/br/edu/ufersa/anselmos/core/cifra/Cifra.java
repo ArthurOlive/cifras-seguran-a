@@ -1,4 +1,4 @@
-package br.edu.ufersa.anselmos.cifra;
+package br.edu.ufersa.anselmos.core.cifra;
 
 public interface Cifra {
     String encriptar(String mensagem);

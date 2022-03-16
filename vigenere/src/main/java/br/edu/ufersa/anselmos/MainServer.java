@@ -1,8 +1,8 @@
 package br.edu.ufersa.anselmos;
 
-import br.edu.ufersa.anselmos.cifra.CifraVigenere;
 import br.edu.ufersa.anselmos.config.CifraConfig;
 import br.edu.ufersa.anselmos.config.ServerConfig;
+import br.edu.ufersa.anselmos.core.cifra.CifraVigenere;
 
 import java.rmi.AlreadyBoundException;
 import java.rmi.RemoteException;

@@ -1,4 +1,4 @@
-package br.edu.ufersa.anselmos;
+package br.edu.ufersa.anselmos.core;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

@@ -1,6 +1,7 @@
 package br.edu.ufersa.anselmos;
 
-import br.edu.ufersa.anselmos.cifra.Cifra;
+import br.edu.ufersa.anselmos.core.ServerLogger;
+import br.edu.ufersa.anselmos.core.cifra.Cifra;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
