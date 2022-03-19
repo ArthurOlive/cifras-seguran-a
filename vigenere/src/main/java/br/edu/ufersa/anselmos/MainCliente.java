@@ -16,11 +16,6 @@ import java.util.logging.Logger;
 public class MainCliente {
     private static final Logger logger = Logger.getLogger(MainCliente.class.getName());
 
-    public static void main2(String[] args) {
-        var cifra = new CifraVigenere(CifraConfig.CHAVE);
-        System.out.println(cifra.encriptar(""));
-    }
-
     public static void main(String[] args) {
         var cifra = new CifraVigenere(CifraConfig.CHAVE);
         var loremIpsumGenerator = new LoremIpsumGenerator();
