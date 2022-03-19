@@ -1,8 +1,10 @@
-package cifras;
+package br.edu.ufersa.anselmos.core.cifra;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import br.edu.ufersa.anselmos.core.cifra.Cersa;
 
 
 public class CersaImpl {
@@ -14,7 +16,7 @@ public class CersaImpl {
 		
 		Cersa c = new Cersa(deslocate);
 		
-		assertEquals("bcd", c.encript(str));
+		assertEquals("bcd", c.encriptar(str));
 	}
 	
 	@Test
@@ -24,10 +26,10 @@ public class CersaImpl {
 		
 		Cersa c = new Cersa(deslocate);
 		
-		String res = c.encript(str);
-		assertEquals("BCD", c.encript(str));
+		String res = c.encriptar(str);
+		assertEquals("BCD", c.encriptar(str));
 		
-		assertEquals(str, c.decript(res));
+		assertEquals(str, c.decriptar(res));
 	}
 	
 	@Test
@@ -37,9 +39,9 @@ public class CersaImpl {
 		
 		Cersa c = new Cersa(deslocate);
 		
-		String res = c.encript(str);
-		assertEquals("ctvjwt", c.encript(str));
+		String res = c.encriptar(str);
+		assertEquals("ctvjwt", c.encriptar(str));
 		
-		assertEquals(str, c.decript(res));
+		assertEquals(str, c.decriptar(res));
 	}
 }

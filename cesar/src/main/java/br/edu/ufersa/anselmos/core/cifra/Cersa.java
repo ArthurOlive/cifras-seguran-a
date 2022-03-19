@@ -1,13 +1,13 @@
-package cifras;
+package br.edu.ufersa.anselmos.core.cifra;
 
-public class Cersa implements ICifra {
+public class Cersa implements Cifra {
 	private int deslocate;
 	
 	public Cersa (int deslocate) {
 		this.deslocate = deslocate % 256;
 	}
 
-	public String encript(String str) {
+	public String encriptar(String str) {
 		
 		String encript = "";
 		for (int i = 0; i < str.length(); i++) {
@@ -17,7 +17,7 @@ public class Cersa implements ICifra {
 		return encript;
 	}
 
-	public String decript(String str) {
+	public String decriptar(String str) {
 		
 		String decript = "";
 		for (int i = 0; i < str.length(); i++) {
