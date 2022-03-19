@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="MainCliente" type="Application" factoryName="Application" activateToolWindowBeforeRun="false" show_console_on_std_err="true" show_console_on_std_out="true">
+    <option name="MAIN_CLASS_NAME" value="br.edu.ufersa.anselmos.MainCliente" />
+    <module name="vernam" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
