@@ -1,7 +1,6 @@
 package cifras;
 
 public class Cersa implements ICifra {
-	private final char INIT = 'A';
 	private int deslocate;
 	
 	public Cersa (int deslocate) {
